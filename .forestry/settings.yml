@@ -9,12 +9,16 @@ sections:
   label: Authors
   create: documents
   match: "*.md"
+  templates:
+  - author-page
 - type: directory
   path: posts
   label: Posts
-  create: documents
+  create: all
   match: "*.md"
   new_doc_ext: md
+  templates:
+  - blog-post
 upload_dir: assets/images/posts
 public_path: "/assets/images/posts"
 front_matter_path: ''
